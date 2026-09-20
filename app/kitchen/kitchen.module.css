@@ -1,0 +1,183 @@
+.page {
+  min-height: 100vh;
+  background: #16100d;
+  color: #f4ece1;
+  font-family: 'Noto Sans Thai', 'Sarabun', system-ui, -apple-system, sans-serif;
+  padding: 1.5rem;
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.connectionStatus {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #c9b8a8;
+}
+
+.connectionStatus.live {
+  color: #9ee6a1;
+}
+
+.emptyState {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #6b5645;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #241a15;
+  border: 3px solid #3d2e24;
+}
+
+.cardCooking {
+  background: #4a3410;
+  border-color: #f2a93c;
+}
+
+.cardTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.tableNumber {
+  font-size: 2.75rem;
+  font-weight: 900;
+  line-height: 1;
+  margin: 0;
+}
+
+.orderTime {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #c9b8a8;
+  white-space: nowrap;
+}
+
+.cardCooking .orderTime {
+  color: #ffe2ad;
+}
+
+.statusLabel {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 0.3rem 0.85rem;
+  border-radius: 999px;
+  background: #3d2e24;
+  color: #c9b8a8;
+}
+
+.cardCooking .statusLabel {
+  background: #f2a93c;
+  color: #2a1a05;
+}
+
+.itemList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.itemLine {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-bottom: 1px dashed #3d2e24;
+  padding-bottom: 0.4rem;
+}
+
+.cardCooking .itemLine {
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+}
+
+.itemQty {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #e8622f;
+  flex-shrink: 0;
+  margin-left: 0.75rem;
+}
+
+.cardCooking .itemQty {
+  color: #2a1a05;
+}
+
+.cardActions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.startButton {
+  flex: 1;
+  font-size: 1.15rem;
+  font-weight: 800;
+  padding: 0.9rem;
+  border-radius: 12px;
+  border: none;
+  background: #e8622f;
+  color: #1c1310;
+  cursor: pointer;
+}
+
+.startButton:disabled {
+  background: #6b5645;
+  color: #a89a8b;
+  cursor: not-allowed;
+}
+
+.serveButton {
+  flex: 1;
+  font-size: 1.15rem;
+  font-weight: 800;
+  padding: 0.9rem;
+  border-radius: 12px;
+  border: 2px solid #9ee6a1;
+  background: transparent;
+  color: #9ee6a1;
+  cursor: pointer;
+}
+
+.cardCooking .serveButton {
+  border-color: #123016;
+  color: #123016;
+  background: #9ee6a1;
+}
+
+.serveButton:disabled {
+  border-color: #6b5645;
+  color: #a89a8b;
+  background: transparent;
+  cursor: not-allowed;
+}
